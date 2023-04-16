@@ -13,7 +13,7 @@ jobs:
       - name: 'login to docker hub'
         run: docker login --username ${{ secrets.DOCKER_NAME }} --password ${{ secrets.DOCKER_TOKEN}}
       - name: 'building  docker image'
-        run: docker build -t ${{ secrets.DOCKER_NAME }}/baker .
+        run: docker build -t ${{ secrets.DOCKER_NAME }}/rawan .
 
       - name: 'pushing to dockerhub'
-        run: docker push ${{ secrets.DOCKER_NAME }}/baker
+        run: docker push ${{ secrets.DOCKER_NAME }}/rawan
