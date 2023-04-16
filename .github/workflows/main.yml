@@ -17,4 +17,3 @@ jobs:
 
       - name: 'pushing to dockerhub'
         run: docker push ${{ secrets.DOCKER_NAME }}/baker
-
